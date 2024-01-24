@@ -77,5 +77,7 @@ for (int j=0; j<=180; j++){
    }
 
     doorOpener=false;
+	  Blynk.virtualWrite(V5, sensorData);
+
 }}
 
