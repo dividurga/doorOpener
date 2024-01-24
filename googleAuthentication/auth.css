@@ -1,0 +1,32 @@
+       body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Trebuchet MS', sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            text-align: center;
+        }
+
+        #container {
+            max-width: 400px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #princetonLogo {
+            width: 100px;
+            margin-bottom: 20px;
+        }
+
+        #submit {
+            padding: 10px;
+            background-color: #ff6000; /* Google Red */
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
