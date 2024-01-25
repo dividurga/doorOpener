@@ -1,12 +1,12 @@
 /*************************************************************
 
-  This is a simple demo of sending and receiving some data.
- *************************************************************/
+Firmware for triggering a servo evertime the API request is sent
+*************************************************************/
 
 /* Fill-in information from Blynk Device Info here */
-#define BLYNK_TEMPLATE_ID "TMPL39IPuuPfy"
-#define BLYNK_TEMPLATE_NAME "doorOpener"
-#define BLYNK_AUTH_TOKEN "3p0B4uIgPAUfEmcEeAxx1785et4jwxcc"          
+#define BLYNK_TEMPLATE_ID "Redacted"
+#define BLYNK_TEMPLATE_NAME "Redacted"
+#define BLYNK_AUTH_TOKEN "Redacted"          
 
 /* Comment this out to disable prints and save space */
 #define BLYNK_PRINT Serial
@@ -20,8 +20,8 @@ Servo servo;
 
 // Your WiFi credentials.
 // Set password to "" for open networks.
-char ssid[] = "bigbang";
-char pass[] = "divij@123";
+char ssid[] = "redacted";
+char pass[] = "redacted";
 
 BlynkTimer timer;
 
@@ -77,7 +77,6 @@ void setup()
 	ESP32PWM::allocateTimer(3);
 	servo.setPeriodHertz(50);    // standard 50 hz servo
 	servo.attach(servoPin, 500, 2400);
-  pinMode(15,OUTPUT);
 
   Blynk.begin(BLYNK_AUTH_TOKEN, ssid, pass);
   // You can also specify server:
