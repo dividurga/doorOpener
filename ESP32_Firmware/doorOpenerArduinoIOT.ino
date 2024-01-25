@@ -8,19 +8,19 @@ Servo servo;
 #define servoPin 13
 
 
-const char DEVICE_LOGIN_NAME[]  = "186ce6aa-1674-4184-a21b-6eb5afb709df";
+const char DEVICE_LOGIN_NAME[]  = "Redacted";
 
-const char SSID[]               = "bigbang";    // Network SSID (name)
-const char PASS[]               = "divij@123";    // Network password (use for WPA, or use as key for WEP)
-const char DEVICE_KEY[]  = "6PDG7m5pZjjm7HcFKuoZP#rNG";    // Secret device password
+const char SSID[]               = "Redacted";    // Network SSID (name)
+const char PASS[]               = "Redacted";    // Network password (use for WPA, or use as key for WEP)
+const char DEVICE_KEY[]  = "Redacted";    // Secret device password
 void onDoorOpenerChange();
 bool doorOpener;
 
 
 void initProperties(){
 
-  ArduinoCloud.setBoardId("186ce6aa-1674-4184-a21b-6eb5afb709df");
-  ArduinoCloud.setSecretDeviceKey("6PDG7m5pZjjm7HcFKuoZP#rNG");
+  ArduinoCloud.setBoardId("Redacted");
+  ArduinoCloud.setSecretDeviceKey("Redacted");
   ArduinoCloud.addProperty(doorOpener, READWRITE, ON_CHANGE, onDoorOpenerChange);
 
 }
