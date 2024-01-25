@@ -25,6 +25,16 @@ char pass[] = "divij@123";
 
 BlynkTimer timer;
 
+void wait(int delay_value){
+  //this function is used instead of the delay function since blynk recommends millis()
+  unsigned long starttime=millis();
+  while(millis()-starttime<delay_value){
+    //do nothing
+    //used instead of delay so that connection is not severed
+
+  }
+
+}
 // This function is called every time the Virtual Pin 0 state changes
 BLYNK_WRITE(V0)
 {
@@ -33,21 +43,24 @@ BLYNK_WRITE(V0)
   if (value==1){
     for(int j=0; j<=180; j++){
       servo.write(j);
-      delay(3);
+      wait(3);
     }
-    delay(500);
+wait(1000);
+    }
     for(int j=180; j>=0; j--){
       servo.write(j);
-      delay(3);
-    }
+      wait(3);
     value=0;
-  }
 }
+    
+  }
+
 
 
 // This function is called every time the device is connected to the Blynk.Cloud
 
 // This function sends Arduino's uptime every second to Virtual Pin 2.
+
 void myTimerEvent()
 {
   // You can send any value at any time.
